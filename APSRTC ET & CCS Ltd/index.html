@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>APSRTC ET & CSS ltd</title>
+</head>
+
+<body>
+    <div class="flex justify-between items-center py-1 px-2">
+        <div class="#">
+            <div>
+
+                <img class="w-[40%]" src="APSRTC-Logo.png" ET & CCS Ltd\APSRTC-Logo.png alt="APSRTC_LOGO">
+
+            </div>
+            <!-- <div class="flex justify-center items-center flex-col">
+                <h1>APSRTC ET & CSS ltd</h1>
+                <h1>Vijayawada</h1>
+            </div> -->
+        </div>
+        <div>
+            <span class="whitespace-nowrap">Tuesday, January 11 2024,11:18:17</span>
+            <div class="flex justify-center items-center mt-2">
+
+
+                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+
+
+                <div class="flex flex-col items-end gap-0">
+                    <span class="text-sm">Welcome</span>
+                    <p class="font-medium text-lg">cbsuser</p>
+                </div>
+                <button
+                    class="bg-blue-500 uppercase hover:bg-blue-700 text-white w-content text-center text-sm py-1 px-2 m-1 border border-blue-700 rounded">
+                    Task List
+                </button>
+                <button
+                    class="bg-red-500 hover:bg-red-700 text-white font-bold text-center text-sm py-1 px-2 border m-1 border-red-700 rounded">
+                    <i class="fa-solid fa-power-off" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span class="block text-center my-1">Welcome To APSRTC ET & CCS LTD</span>
+        <!-- Navigation bar-->
+        
+        <nav class="bg-red-800 border-gray-200 dark:bg-red-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-center  mx-auto p-4">
+                <div class="flex justify-between">
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        HOME</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        DEPOSITS</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        RECOVERY</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        ADMIN</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        MISC AND OTHERS</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        SEARCH</button>
+                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        REPORTS</button>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <div class="w-100 p-4 m-4">
+        <form>
+            <div class=" my-4 border-2 p-2">
+                <div class="text-center bg-orange-500 text-white py-4 mb-4">STL Application Page</div>
+                <div class="flex flex-wrap justify-between">
+
+                    <div class="flex my-2 mx-2 ">
+                        <label
+                            class="block whitespace-nowrap text-gray-500 font-bold text-center md:text-right mb-1 md:mb-0 pr-4"
+                            for="loan_type">
+                            Loan Type
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="loan_type" type="text" value="STL">
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="tenure">
+                            Tenure
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="tenure" type="text">
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="req_loan_amount">
+                            Request Loan Amount
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="req_loan_amount" type="text">
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="application_date">
+                            Application Date
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="application_date" type="date">
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="member_search">
+                            Member Search <sup class="text-red text-md">*</sup>
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="member_search" type="text">
+                        <button
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
+                            Reset
+                        </button>
+                    </div>
+
+                    <div class="flex my-2 mx-2">
+                        <p>Member GL</p>
+                        <span>01000002</span>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Emp ID</p>
+                        <span>E0000105</span>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Member Name</p>
+                        <span class="uppercase">S Venkata raman</span>
+                    </div>
+
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="mobile_number">
+                            Mobile Number
+                        </label>
+                        <input
+                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="mobile_number" type="text" placeholder="Enter Your No.">
+                    </div>
+                </div>
+                <div class="flex items-center my-2 mx-2 ">
+                    <input id="mdrf_surety" name="color[]" value="blue" type="checkbox"
+                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                    <label for="mdrf_surety" class="ml-3 min-w-0 flex-1 text-gray-500">MDRF as Surety</label>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="surety_1">
+                            Surety 1 <sup>*</sup>
+                        </label>
+                        <input
+                            class="bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="surety_1" type="text">
+                        <button
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
+                            Reset
+                        </button>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 1 GL</p>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 1 Emp ID</p>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 1 Name</p>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex my-2 mx-2">
+                        <label
+                            class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                            for="surety_2">
+                            Surety 2 <sup>*</sup>
+                        </label>
+                        <input
+                            class="bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            id="surety_2" type="text">
+                        <button
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
+                            Reset
+                        </button>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 2 GL</p>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 2 Emp</p>
+                    </div>
+                    <div class="flex my-2 mx-2">
+                        <p>Surety 2 Name</p>
+                    </div>
+                </div>
+                <div class="flex my-2 mx-2">
+                    <label for="op"
+                        class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">Return Remarks</label>
+                    <select disabled id="op"
+                        class="bg-gray-200 border-2 border-gray-200 text-gray-700 rounded py-2 px-2">
+                        <option selected>--Selected--</option>
+                    </select>
+                    <!-- bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 -->
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <button
+                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
+                    Submit
+                </button>
+                <button
+                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
