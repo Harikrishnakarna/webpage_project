@@ -25,7 +25,7 @@
             </div> -->
         </div>
         <div>
-            <span class="whitespace-nowrap">Tuesday, January 11 2024,11:18:17</span>
+            <div id="formattedDate" class="text-sm"></div>
             <div class="flex justify-center items-center mt-2">
 
 
@@ -59,21 +59,21 @@
         <!-- Navigation bar-->
         
         <nav class="bg-red-800 border-gray-200 dark:bg-red-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-center  mx-auto p-4">
-                <div class="flex justify-between">
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        HOME</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        DEPOSITS</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        RECOVERY</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        ADMIN</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        MISC AND OTHERS</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
-                        SEARCH</button>
-                    <button type="button" class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-center  mx-auto px-4">
+                <div class="flex flex-row justify-between items-center gap-3">
+                    <button type="button" class="text-white font-medium mx-2 text-sm py-2 text-center">
+                        HOME</button>       <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium mx-2  text-sm py-2 text-center">
+                        DEPOSITS</button>   <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium mx-2  text-sm py-2 text-center">
+                        RECOVERY</button>   <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium mx-2 text-sm py-2 text-center">
+                        ADMIN</button>      <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium mx-2 text-sm py-2 text-center">
+                        MISC AND OTHERS</button>   <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium mx-2  text-sm py-2 text-center">
+                        SEARCH</button>     <p class="bg-white h-[50px] w-[2px]"></p>
+                    <button type="button" class="text-white font-medium ml-2  text-sm py-2 text-center">
                         REPORTS</button>
                 </div>
             </div>
@@ -82,7 +82,7 @@
     </div>
     <div class="w-100 p-4 m-4">
         <form>
-            <div class=" my-4 border-2 p-2">
+            <div class="my-4 border-2 p-2">
                 <div class="text-center bg-orange-500 text-white py-4 mb-4">STL Application Page</div>
                 <div class="flex flex-wrap justify-between">
 
@@ -93,7 +93,7 @@
                             Loan Type
                         </label>
                         <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 ml-[55px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="loan_type" type="text" value="STL">
                     </div>
                     <div class="flex my-2 mx-2">
@@ -103,7 +103,7 @@
                             Tenure
                         </label>
                         <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 mx appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="tenure" type="text">
                     </div>
                     <div class="flex my-2 mx-2">
@@ -116,6 +116,7 @@
                             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="req_loan_amount" type="text">
                     </div>
+                    <!-- second line -->
                     <div class="flex my-2 mx-2">
                         <label
                             class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
@@ -123,19 +124,21 @@
                             Application Date
                         </label>
                         <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 ml-[4px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="application_date" type="date">
+                        <label 
+                            class="text-lg">Status</label>
                     </div>
                 </div>
                 <div class="flex justify-between">
                     <div class="flex my-2 mx-2">
-                        <label
+                        <p
                             class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                             for="member_search">
-                            Member Search <sup class="text-red text-md">*</sup>
-                        </label>
+                            Member Search <span class="text-[#FF0000] text-sm">*</span>
+                    </p>
                         <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 ml-[3px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="member_search" type="text">
                         <button
                             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
@@ -145,15 +148,15 @@
 
                     <div class="flex my-2 mx-2">
                         <p>Member GL</p>
-                        <span>01000002</span>
+                        <span class="ml-10 text-xl">01000002</span>
                     </div>
                     <div class="flex my-2 mx-2">
-                        <p>Emp ID</p>
-                        <span>E0000105</span>
+                        <p>EmpID</p>
+                        <span class="ml-10 text-xl">E0000105</span>
                     </div>
-                    <div class="flex my-2 mx-2">
+                    <div class="flex my-2 gap-2">
                         <p>Member Name</p>
-                        <span class="uppercase">S Venkata raman</span>
+                        <span class="uppercase text-xl mt-[3px] ">S Venkata raman</span>
                     </div>
 
                 </div>
@@ -165,24 +168,24 @@
                             Mobile Number
                         </label>
                         <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 ml-[11px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="mobile_number" type="text" placeholder="Enter Your No.">
                     </div>
                 </div>
                 <div class="flex items-center my-2 mx-2 ">
                     <input id="mdrf_surety" name="color[]" value="blue" type="checkbox"
                         class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                    <label for="mdrf_surety" class="ml-3 min-w-0 flex-1 text-gray-500">MDRF as Surety</label>
+                    <label for="mdrf_surety" class="ml-3 min-w-0 flex-1 text-gray-500 text-xl">MDRF as Surety</label>
                 </div>
                 <div class="flex justify-between">
                     <div class="flex my-2 mx-2">
                         <label
                             class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                             for="surety_1">
-                            Surety 1 <sup>*</sup>
+                            Surety 1 <span class="text-[#FF0000] text-sm">*</span>
                         </label>
                         <input
-                            class="bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 w-2/5 ml-[60px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="surety_1" type="text">
                         <button
                             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
@@ -204,20 +207,20 @@
                         <label
                             class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                             for="surety_2">
-                            Surety 2 <sup>*</sup>
+                            Surety 2<span class="text-[#FF0000] text-sm">*</span>
                         </label>
                         <input
-                            class="bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                            class="bg-gray-200 w-2/5  ml-[60px] appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                             id="surety_2" type="text">
                         <button
                             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 border ml-1 border-red-700 rounded">
                             Reset
                         </button>
                     </div>
-                    <div class="flex my-2 mx-2">
+                    <div class="flex my-2 mr-2">
                         <p>Surety 2 GL</p>
                     </div>
-                    <div class="flex my-2 mx-2">
+                    <div class="flex my-2 mr-4">
                         <p>Surety 2 Emp</p>
                     </div>
                     <div class="flex my-2 mx-2">
@@ -228,7 +231,7 @@
                     <label for="op"
                         class="block whitespace-nowrap text-center text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">Return Remarks</label>
                     <select disabled id="op"
-                        class="bg-gray-200 border-2 border-gray-200 text-gray-700 rounded py-2 px-2">
+                        class="bg-gray-200 border-2 ml-[14px] border-gray-200 text-gray-700 rounded py-2 px-2">
                         <option selected>--Selected--</option>
                     </select>
                     <!-- bg-gray-200 w-2/5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 -->
@@ -246,6 +249,27 @@
             </div>
         </form>
     </div>
+    <script>
+        function getFormattedDate() {
+          const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            // second: '2-digit',
+            hour12: false,
+
+          };
+    
+          const date = new Date();
+          const formattedDate = date.toLocaleDateString('en-US', options);
+          
+          return formattedDate;
+        }
+        document.getElementById('formattedDate').textContent = getFormattedDate();
+      </script>
 </body>
 
 </html>
